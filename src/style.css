@@ -1,0 +1,93 @@
+body{
+    margin:0px;
+    background: linear-gradient(to right,black,white);
+}
+.app{
+    text-align: center;
+    width:80%;
+    margin:auto;
+}
+.searcharea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+input{
+    width:500px;
+    height:40px;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.searchicon{
+    height:46px;
+    background-color: inherit;
+    border-left: 0px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+.searchicon:hover{
+    cursor: pointer;
+}
+::-webkit-input-placeholder{
+    font-size: 20px;
+}
+.movies{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+.moviecard{
+    width:250px;
+    height:auto;
+    background-color: lightcoral;
+    margin: 10px;
+    padding: 15px;;
+}
+.moviecard h1{
+    color:red;
+}
+.moviecard h3{
+    color:blue;
+}
+
+.moviecard:hover{
+   transform: scale(1.05,1.05);
+}
+
+
+.image{
+    width:250px;
+    height:300px;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    color: blue;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .movies{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:700px) {
+    .movies{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:1400px) {
+    .movies{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
